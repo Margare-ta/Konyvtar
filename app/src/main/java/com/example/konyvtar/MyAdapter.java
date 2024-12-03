@@ -31,13 +31,15 @@ public class MyAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewgroup) {
-        view = LayoutInflater.from(context).inflate(R.layout.books_list_item, viewgroup,false);
+        view = LayoutInflater.from(context).inflate(R.layout.list_item, viewgroup,false);
 
-        TextView emailTextView = view.findViewById(R.id.emailTextView);
-        TextView passwordTextView = view.findViewById(R.id.passwordTextView);
+        TextView nameTextV = view.findViewById(R.id.TextVName);
+        TextView titleTextv = view.findViewById(R.id.TextVTitle);
+        TextView pageNumberTextv = view.findViewById(R.id.TextVPageNumber);
 
-        emailTextView.setText(books.get(i).getEmail());
-        passwordTextView.setText(books.get(i).getPassword());
+        nameTextV.setText(books.get(i).getAuthor());
+        titleTextv.setText(books.get(i).getTitle());
+        pageNumberTextv.setText(books.get(i).getPageInteger());
         return view;
     }
 

@@ -21,13 +21,9 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private Button addButton;
-    private Button deleteButton;
     private EditText nameEditText;
     private EditText titleEditText;
     private EditText pageNumber;
-    private TextView nameTextView;
-    private TextView tilteTextView;
-    private TextView pageNumberTextView;
     private ListView booksListView;
     private MyAdapter booksAdapter;
     private static ArrayList<Books> books;

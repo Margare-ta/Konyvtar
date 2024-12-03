@@ -3,12 +3,12 @@ package com.example.konyvtar;
 public class Books {
     private String Author;
     private String Title;
-    private Number PageNumber;
+    private Integer PageInteger;
 
-    public Books(String author, String title, Number pageNumber) {
+    public Books(String author, String title, Integer pageInteger) {
         Author = author;
         Title = title;
-        PageNumber = pageNumber;
+        PageInteger = pageInteger;
     }
 
     public String getAuthor() {
@@ -27,11 +27,11 @@ public class Books {
         Title = title;
     }
 
-    public Number getPageNumber() {
-        return PageNumber;
+    public Integer getPageInteger() {
+        return PageInteger;
     }
 
-    public void setPageNumber(Number pageNumber) {
-        PageNumber = pageNumber;
+    public void setPageInteger(Integer pageInteger) {
+        PageInteger = pageInteger;
     }
 }
